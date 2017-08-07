@@ -118,7 +118,7 @@ public class RNPromptFragment extends DialogFragment implements DialogInterface.
             if (typeString != null) {
                 switch (typeString) {
                     case "secure-text":
-                        type = InputType.TYPE_CLASS_TEXT | InputType.TYPE_NUMBER_VARIATION_PASSWORD;
+                        type = InputType.TYPE_NUMBER_VARIATION_PASSWORD | InputType.TYPE_CLASS_NUMBER;
                         break;
                     case "numeric":
                         type = InputType.TYPE_CLASS_TEXT | InputType.TYPE_CLASS_NUMBER;
