@@ -50,7 +50,7 @@ public class RNPromptFragment extends DialogFragment implements DialogInterface.
         }
     }
 
-    private final
+    private
     @Nullable
     RNPromptModule.PromptFragmentListener mListener;
 
@@ -58,9 +58,8 @@ public class RNPromptFragment extends DialogFragment implements DialogInterface.
         mListener = null;
     }
 
-    public RNPromptFragment(@Nullable RNPromptModule.PromptFragmentListener listener, Bundle arguments) {
+    public void setListener(@Nullable RNPromptModule.PromptFragmentListener listener) {
         mListener = listener;
-        setArguments(arguments);
     }
 
     public Dialog createDialog(Context activityContext, Bundle arguments) {
